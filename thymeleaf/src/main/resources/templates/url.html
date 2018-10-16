@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a th:href="@{https://www.lwkang.top/${type}(type=${type})}">link</a>
+    <a th:href="@{https://www.lwkang.top/{pageId}/123(pageId=${pageId})}">view</a>
+    <div th:style="'background:url(' + @{${img}} + ');'">
+        <br/><br/><br/>
+    </div>
+</body>
+</html>

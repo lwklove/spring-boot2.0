@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Url</title>
+</head>
+<body>
+    <input th:value="${name}">
+    <input th:value="${age gt 30 ? '大叔':'小伙'}">
+    <a th:if="${flag eq 'yes'}" th:href="@{http://www.baidu.com}">baidu</a>
+</body>
+</html>
