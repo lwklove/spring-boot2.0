@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>dates</p><br>
+    <p th:text="${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}">neo</p><br>
+    <p th:text="${#dates.createToday()}">kk</p><br>
+    <p th:text="${#dates.createNow()}">kk</p><br>
+    <p>strings</p>
+    <p th:text="${#strings.isEmpty(name)}">name</p>
+    <p th:text="${#strings.listIsEmpty(users)}">users</p>
+    <p th:text="${#strings.concat(name,name,name)}"></p>
+    <p th:text="${#strings.length(name)}">length</p>
+    <p th:text="${#strings.randomAlphanumeric(count)}"></p>
+</body>
+</html>
